@@ -80,6 +80,77 @@ header.main-header {
   margin-right: 16px;
   border-radius: 5px;
   border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.badge-avatar > .avatar > .profile::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #001f3f;
+  position: absolute;
+  top: -5px;
+  left: 120px;
+  transform: rotate(45deg);
+}
+
+.badge-avatar > .avatar > .profile {
+  position: absolute;
+  right: 16px;
+  top: 80px;
+  background-color: #001f3f;
+  padding: 8px;
+  height: 100px;
+}
+
+.badge-avatar > .avatar > .profile:hover,
+.badge-avatar > .avatar:hover > .profile {
+  display: flex;
+}
+
+.profile-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.badge-avatar > .avatar > .profile ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 12px;
+}
+
+.badge-avatar > .avatar > .profile ul li {
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.badge-avatar > .avatar > .profile > .profile-links {
+  flex-direction: column;
+}
+
+.badge-avatar > .avatar > .profile button {
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border: 0;
+  color: #001f3f;
+  background-color: #ffff;
+  outline: none;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+}
+
+.badge-avatar > .avatar > .profile > button:hover {
+  cursor: pointer;
 }
 
 .main-footer {
