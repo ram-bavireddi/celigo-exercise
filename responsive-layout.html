@@ -50,5 +50,25 @@
         <span>My Footer</span>
       </footer>
     </main>
+    <script>
+      (function () {
+        const toggle = (el) => {
+          if(el.style.display === 'flex') {
+            el.style.display = 'none';
+            return;
+          }
+          if(!el.style.display || el.style.display === 'none') {
+            el.style.display = 'flex';
+            return;
+          }
+        }
+        const hamburgerEl = document.querySelector('.navbar .hamburger');
+        const avatarEl = document.querySelector('.badge-avatar .avatar');
+        const navEl = document.querySelector('.navbar nav.nav');
+        const profileEl = document.querySelector('.avatar .profile');
+        hamburgerEl.addEventListener('click', () => toggle(navEl));
+        avatarEl.addEventListener('click', () => toggle(profileEl));
+      }());
+    </script>
   </body>
 </html>
